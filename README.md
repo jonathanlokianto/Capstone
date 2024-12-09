@@ -1,4 +1,4 @@
-# Capstone-Bangkit-2023-Journey
+# Capstone-Bangkit-2024-Journey
 
 <!-- PROJECT LOGO -->
 <br />
@@ -35,7 +35,7 @@
 
 | Name                   | Student ID  | Path                |
 | ---------------------- | ----------  | ------------------- |
-| Rafli Ramadhani        | M343DSX2935 | Machine Learning    |
+| Caroline Graciela Harmanto|M108B4KX0902| Machine Learning    |
 | Richard Nelson Gunawan | M264DKX3866 | Machine Learning    |
 | Husna Salsabila        | M340DKY4218 | Machine Learning    |
 | Toriq Zuhud Nurcahyo   | C343DSX2418 | Cloud Computing     |
