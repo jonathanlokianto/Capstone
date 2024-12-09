@@ -9,3 +9,5 @@ service.json
 
 # Ignore SQL files
 database.sql
+
+package-lock.json
