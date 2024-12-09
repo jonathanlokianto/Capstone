@@ -57,3 +57,16 @@
 | --- | --- | --- | --- |
 |Programming Language|Kotlin|Node.JS , Flask|Pyhton, TF.JS|
 |implementation|Design, Prototype, Aplication|API|Model|
+
+
+# Documentation
+You can find our relevant documentation at the following link:
+
+## Machine Learning 
+- [Machine Learning Documentation](https://github.com/jonathanlokianto/Capstone/tree/main/Machine%20Learning)
+
+## Cloud Computing 
+- [Cloud Computing Documentation](https://github.com/jonathanlokianto/Capstone/tree/main/Cloud%20Computing)
+
+## Mobile Development 
+- [Mobile Development Documentation](https://github.com/jonathanlokianto/Capstone/tree/main/Mobile%20Developer)
