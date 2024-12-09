@@ -5,7 +5,7 @@
 <p align="center">
   <a href='https://github.com/jonathanlokianto/Capstone'><img src='logo.png' type='image' alt="Logo"></a>
   <h2 align="center">
-  Dektes</h2>
+  DekTes</h2>
   
   <p align="center">
   This is a project to fulfill the  <a href="https://grow.google/intl/id_id/bangkit/"><strong>Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</strong></a>
@@ -16,7 +16,7 @@
     <br />
     <a href="#">Project Brief</a>
     ·
-    <a href="#">Journey APK Link</a>
+    <a href="#">DekTes APK Link</a>
     ·
     <a href="#">Video Presentation</a>
     ·
