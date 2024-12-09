@@ -33,14 +33,15 @@
 
 <br>
 
-| Name                   | Student ID  | Path                |
-| ---------------------- | ----------  | ------------------- |
-| Caroline Graciela Harmanto|M108B4KX0902| Machine Learning    |
-| Richard Nelson Gunawan | M264DKX3866 | Machine Learning    |
-| Husna Salsabila        | M340DKY4218 | Machine Learning    |
-| Toriq Zuhud Nurcahyo   | C343DSX2418 | Cloud Computing     |
-| Arif Rizqi             | C145DKX3894 | Cloud Computing     |
-| Novandi Ramadhan       | A343DSX1207 | Mobile Development  |
+| Name                              | Student ID    | Path                  |
+| ----------------------            | ----------    | -------------------   |
+| Caroline Graciela Harmanto        | M108B4KX0902  | Machine Learning      |
+| Jonathan Lokianto	                | M108B4KY2091  | Machine Learning      |
+| Muhammad Zidan Alif Oktavian      | M284B4KY3135  | Machine Learning      |
+| Bariq Adyatma                     | C284B4KY0813  | Cloud Computing       |
+| Gregorius Ivan Pratama	        | C505B4KY1646  | Cloud Computing       |
+| Rahmad Firdiansyah	            | A284B4KY3623  | Mobile Development    |
+| Steven Gerrard		            | A266B4KY4215  | Mobile Development    |
 
 <br>
 
