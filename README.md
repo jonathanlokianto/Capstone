@@ -4,8 +4,6 @@
 <br />
 <p align="center">
   <a href='https://github.com/jonathanlokianto/Capstone'><img src='logo.png' type='image' alt="Logo"></a>
-
-  <h1 align="center">Journey</h1>
   <h2 align="center">
   Dektes</h2>
   
@@ -24,14 +22,14 @@
     ·
     <a href="#">Presentation Slide</a>
     <br />
-    © C23 - PS017 Bangkit Capstone Team
+    © C242-PS040 Bangkit Capstone Team
   </p>
 </p>
 <br>
 
 # Team Members
 
-## Team ID : C23 - PS017
+## Team ID : C242-PS040
 
 <br>
 
