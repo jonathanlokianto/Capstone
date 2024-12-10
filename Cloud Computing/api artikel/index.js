@@ -52,39 +52,57 @@ app.get('/articles/:id', async (req, res) => {
 
 // Endpoint untuk menambahkan artikel
 app.post('/articles', async (req, res) => {
-    const { title, content, image_url } = req.body;
+    const { title, content, image_url, source } = req.body;
 
     // Validasi sederhana
-    if (!title || !content || !image_url) {
-        return res.status(400).json({ status: 'error', message: 'All fields are required' });
+    if (!title || !content || !image_url || !source) {
+        return res.status(400).json({ status: 'error', message: 'All fields are required (title, content, image_url, source)' });
     }
 
     try {
         // Mendapatkan ID terakhir
         const snapshot = await db.collection('artikel').orderBy('id').get();
-        const lastId = snapshot.empty ? 0 : parseInt(snapshot.docs[snapshot.docs.length - 1].id); // Menggunakan ID terakhir
+        const lastId = snapshot.empty ? 0 : parseInt(snapshot.docs[snapshot.docs.length - 1].id);
 
-        const newId = lastId + 1; // ID baru
+        const newId = lastId + 1;
+
+        // Format tanggal DD-MM-YYYY
+        const currentDate = new Date();
+        const formattedDate = `${String(currentDate.getDate()).padStart(2, '0')}-${String(currentDate.getMonth() + 1).padStart(2, '0')}-${currentDate.getFullYear()}`;
 
         const newArticle = {
             id: newId,
             title,
             content,
-            image_url
+            image_url,
+            source, // Tambahkan kolom sumber
+            created_at: formattedDate
         };
 
         await db.collection('artikel').doc(newId.toString()).set(newArticle);
-        res.status(201).json({ status: 'success', message: 'Article added successfully', articleId: newId });
+        res.status(201).json({
+            status: 'success',
+            message: 'Article added successfully',
+            articleId: newId
+        });
     } catch (err) {
         console.error('Error inserting article:', err);
         res.status(500).json({ status: 'error', message: 'Internal Server Error' });
     }
 });
 
+
+
+
 // Endpoint untuk mengedit artikel berdasarkan ID
 app.put('/articles/:id', async (req, res) => {
     const articleId = req.params.id;
-    const { title, content, image_url } = req.body;
+    const { title, content, image_url, source } = req.body;
+
+    // Validasi sederhana
+    if (!title || !content || !image_url || !source) {
+        return res.status(400).json({ status: 'error', message: 'All fields are required (title, content, image_url, source)' });
+    }
 
     try {
         const docRef = db.collection('artikel').doc(articleId);
@@ -94,7 +112,7 @@ app.put('/articles/:id', async (req, res) => {
             return res.status(404).json({ status: 'error', message: 'Article not found' });
         }
 
-        await docRef.update({ title, content, image_url });
+        await docRef.update({ title, content, image_url, source });
         res.status(200).json({ status: 'success', message: 'Article updated successfully' });
     } catch (err) {
         console.error('Error updating article:', err);
@@ -124,7 +142,7 @@ app.delete('/articles/:id', async (req, res) => {
 
 // Rute untuk root
 app.get('/', (req, res) => {
-    res.send('HOREE BISA API ARTIKEL!!!');
+    res.send('CAPSTONE ARTICLES API!!!');
 });
 
 // Mulai server
