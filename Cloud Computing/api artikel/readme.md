@@ -34,25 +34,25 @@ API ini memungkinkan pengguna untuk mengelola artikel, termasuk membuat, membaca
             "id": 1,
             "title": "Judul Artikel 1",
             "content": "Isi artikel 1.",
-            "image_url": "http://example.com/image1.jpg"
+            "image_url": "http://example.com/image1.jpg",
+            "source" : "http://example.com/article1.jpg",
+            "create_at" : "DD-MM-YYYY"
         },
         {
             "id": 2,
             "title": "Judul Artikel 2",
             "content": "Isi artikel 2.",
-            "image_url": "http://example.com/image2.jpg"
+            "image_url": "http://example.com/image2.jpg",
+            "source" : "http://example.com/article2.jpg",
+            "create_at" : "DD-MM-YYYY"
         },
         {
             "id": 3,
             "title": "Judul Artikel 3",
             "content": "Isi artikel 3.",
-            "image_url": "http://example.com/image3.jpg"
-        },
-        {
-            "id": 4,
-            "title": "Judul Artikel 4",
-            "content": "Isi artikel 4.",
-            "image_url": "http://example.com/image4.jpg"
+            "image_url": "http://example.com/image3.jpg",
+            "source" : "http://example.com/article3.jpg",
+            "create_at" : "DD-MM-YYYY"
         }
     ]
 }
@@ -76,7 +76,9 @@ API ini memungkinkan pengguna untuk mengelola artikel, termasuk membuat, membaca
             "id": 1,
             "title": "Judul Artikel 1",
             "content": "Isi artikel 1.",
-            "image_url": "http://example.com/image1.jpg"
+            "image_url": "http://example.com/image1.jpg",
+            "source" : "http://example.com/article1.jpg",
+            "create_at" : "DD-MM-YYYY"
         }
     ]
 }
