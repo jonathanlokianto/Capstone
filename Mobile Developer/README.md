@@ -1,8 +1,14 @@
-# Machine Learning Documentation
+# Mobile Developer Documentation
 
-## Machine Learning Schedule
+## Timeline
 
 | Week 1                 | Week 2                   | Week 3                               | Week 4                                  |
 | ---------------------- | ------------------------ | ------------------------------------ | --------------------------------------- |
-| Finding image dataset  | Pre-processing dataset   | Testing and validating the CNN model | Collecting feedback from deployment     |
+| Creating User Flow
+Communication about UI / UX
+  | Designing UI/UX   | Implement UI and
+Connecting App to API
+ | Implement UI and
+Connecting App to API
+     |
 
