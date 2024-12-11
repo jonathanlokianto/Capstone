@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        app:fontFamily="@font/roboto_medium"
+        app:iconTint="@color/menu_item_color"
+        app:titleTextColor="@color/menu_item_color" />
+
+    <item
+        android:id="@+id/nav_article"
+        android:icon="@drawable/ic_article"
+        android:title="@string/article"
+        app:fontFamily="@font/roboto_medium"
+        app:iconTint="@color/menu_item_color"
+        app:titleTextColor="@color/menu_item_color" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_historry"
+        android:title="@string/profile"
+        app:fontFamily="@font/roboto_medium"
+        app:iconTint="@color/menu_item_color"
+        app:titleTextColor="@color/menu_item_color" />
+
+</menu>

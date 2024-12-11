@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <!-- HomeFragment -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.dicoding.capstone.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_detail_article"
+            app:destination="@id/nav_detail_article">
+            <argument
+                android:name="id"
+                app:argType="string" />
+        </action>
+
+        <!-- Action untuk navigasi ke MainFragment -->
+        <action
+            android:id="@+id/action_nav_home_to_mainFragment"
+            app:destination="@id/nav_mainFragment" />
+    </fragment>
+
+    <!-- ArticleFragment -->
+    <fragment
+        android:id="@+id/nav_article"
+        android:name="com.dicoding.capstone.ui.articles.ArticleFragment"
+        android:label="@string/article"
+        tools:layout="@layout/fragment_article">
+
+        <action
+            android:id="@+id/action_nav_article_to_nav_detail_article"
+            app:destination="@id/nav_detail_article">
+            <argument
+                android:name="id"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <!-- ProfileFragment -->
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.dicoding.capstone.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <!-- DetailArticleFragment -->
+    <fragment
+        android:id="@+id/nav_detail_article"
+        android:name="com.dicoding.capstone.ui.articles.DetailArticleFragment"
+        android:label="@string/article"
+        tools:layout="@layout/fragment_detail_article" />
+
+    <!-- MainFragment -->
+    <fragment
+        android:id="@+id/nav_mainFragment"
+        android:name="com.dicoding.capstone.ui.home.MainFragment"
+        android:label="@string/main"
+        tools:layout="@layout/fragment_main">
+
+        <!-- Navigasi ke DetailStressFragment -->
+        <action
+            android:id="@+id/action_mainFragment_to_nav_detail_stress"
+            app:destination="@id/nav_detail_stress">
+            <argument
+                android:name="id"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <!-- DetailStressFragment -->
+    <fragment
+        android:id="@+id/nav_detail_stress"
+        android:name="com.dicoding.capstone.ui.profile.DetailStressFragment"
+        android:label="@string/resulttest"
+        tools:layout="@layout/fragment_detail_stress">
+
+        <argument
+            android:name="result"
+            app:argType="com.dicoding.capstone.data.api.AnalysisResult" />
+    </fragment>
+
+
+</navigation>

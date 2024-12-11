@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@android:color/transparent"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="24dp"
+            android:background="@color/colorBase"
+            android:elevation="2dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBase"
+                app:layout_collapseMode="pin" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="start">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="@string/welcome"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/roboto_bold"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="214dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/welcome_desk"
+                        android:fontFamily="@font/roboto_medium"/>
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="@color/btn_color"
+                        android:text="@string/btn_start"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="end|bottom"
+                android:layout_marginEnd="-30dp"
+                android:rotation="30"
+                android:layout_marginBottom="-30dp"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/pict_emot" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/article"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvArticle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                tools:listitem="@layout/article_layout_horizontal"
+                app:layoutManager="LinearLayoutManager"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        android:text="❤️Selamat Datang Di Aplikasi Dektes❤️"
+        android:textSize="15sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/black" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

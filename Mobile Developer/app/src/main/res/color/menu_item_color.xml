@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warna merah saat ditekan -->
+    <item android:color="@color/colorBase1" android:state_pressed="true" />
+    <!-- Warna merah saat dipilih -->
+    <item android:color="@color/colorBase1" android:state_checked="true" />
+    <!-- Warna default (misalnya hitam) -->
+    <item android:color="@android:color/darker_gray" />
+</selector>

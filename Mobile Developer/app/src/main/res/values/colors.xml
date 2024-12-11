@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorBase">#A3CEF1</color>
+    <color name="colorBase1">#386BF6</color>
+
+    <color name="textColor">#000000</color>
+    <color name="cardColor">#FFFFFF</color>
+    <color name="btn_color">#F5B7B1</color>
+
+    <color name="blue">#386BF6</color>
+
+</resources>
