@@ -1,4 +1,4 @@
-# Capstone-Bangkit-2024-Journey
+# Capstone-Bangkit-2024-DEKTES
 
 <!-- PROJECT LOGO -->
 <br />
