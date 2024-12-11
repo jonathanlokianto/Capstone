@@ -14,11 +14,11 @@
     <a href="https://github.com/jonathanlokianto/Capstone"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="#">Project Brief</a>
+    <a href="https://docs.google.com/document/d/1mBpYzzJBAlRY_PCCWks9EanRWjc00xQJsJT1coYsE9s/edit?usp=sharing">Project Brief</a>
     ·
     <a href="#">DekTes APK Link</a>
     ·
-    <a href="#">Video Presentation</a>
+    <a href="https://www.youtube.com/watch?v=P9CMwsPOBU0">Video Presentation</a>
     ·
     <a href="https://www.canva.com/design/DAGZAGuZTyU/Sj5TUkrP4CKs7VzQNF3XvQ/edit?utm_content=DAGZAGuZTyU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Presentation Slide</a>
     <br />
