@@ -79,7 +79,7 @@ app.post('/articles', upload.single('image'), async (req, res) => {
 
     try {
         // Upload gambar ke Google Cloud Storage
-        const fileName = `foto artikel/${req.file.originalname}`;
+        const fileName = `foto%20artikel/${req.file.originalname}`;
         const file = bucket.file(fileName);
 
         const stream = file.createWriteStream({
@@ -151,7 +151,7 @@ app.put('/articles/:id', upload.single('image'), async (req, res) => {
 
         if (image) {
             // Jika gambar baru diunggah, unggah gambar ke Google Cloud Storage
-            const fileName = `foto artikel/${image.originalname}`;
+            const fileName = `foto$20artikel/${image.originalname}`;
             const file = bucket.file(fileName);
 
             const stream = file.createWriteStream({
