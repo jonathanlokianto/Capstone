@@ -41,36 +41,43 @@ Facial Expression of Fatigues (FEF) : https://www.kaggle.com/datasets/minhngt02/
 -  Import the required libraries to get started with the project.
 
 
-### <Step 2>
-
-## Data Augmentation
-- Creating a generator using ImageDataGenerator to augment the data with several parameters
-- Loaded all the datasets (training and validation) into the datasets
+### Step 2: Import the Dataset
 
 
-## Defining a model
-- Creating basic model from scratch using 4 convolutional layers designed for feature extractions, with additional components such as batch normalization, pooling, and dropout for better performance.
-- Using L2 regularization to reduce overfitting.
-- The output that we expected is between 0 and 1, thus using sigmoid activation
 
-## Training the Model
-- We train our model with 30 epochs, using reduce_lr callback (which has been initialized earlier)
+### Step 3: Data Augmentation
+- Create a generator using ImageDataGenerator to augment the data with various parameters, such as rotation, zoom, and flipping.
+- Load both the training and validation datasets into their respective variables.
+
+
+## Step 4: Defining a model
+- Create a basic model from scratch using 4 convolutional layers designed for feature extraction
+- Add additional like batch normalization, pooling, and dropout to improve performance and reduce overfitting.
+- Apply L2 regularization to prevent the model from overfitting.
+- The model's output is expected to be between 0 and 1, so a sigmoid activation function is used for the output layer.
+
+
+## Step : Training the Model
+- Train the model for 30 epochs, using a learning rate scheduler (reduce_lr) to adjust the learning rate dynamically.
+
 
 ## Plotting the Result of Training and Validation Accuracy and Loss
-- Using Matplotlib, we are able to plot our training and validation accuracy to a simply understanding graphic
-- The accuracy result of our model is 84,5% of training accuracy and 85,56% of validation accuracy. While the loss is 0.4030 for the training loss and 0.3999 for the validation loss.
+- Utilize Matplotlib to plot training and validation accuracy and loss graphs for easy visualization.
+- The model achieves 84.5% accuracy on the training set and 85.56% on the validation set. The training loss is 0.4030, while the validation loss is 0.3999.
+
 
 ## Saving the Model to H5 Extension 
-- We save the model in our specific file path (in our Google Drive), with the .h5 extension.
+- Save the trained model with the .h5 extension to a specified path (such as Google Drive) for future use.
 
 ## Testing the Model
-- To see if our model works properly as it's trained, we test our model by uploading real images of human facial expressions
-- By leveraging the widgets library, we created an interactive interface that allows users to upload images directly from their devices, and preprocess them by normalizing the pixel value, as well as rescaling them to the required dimensions (48, 48).
-- Then, we feed the preprocessed images into a saved model to predict the stress level of the uploaded images
+- To verify the model's functionality, test it by uploading real images of human facial expressions.
+- Use the ipywidgets library to create an interactive interface, allowing users to upload images directly from their devices.
+- Preprocess the uploaded images by normalizing pixel values and resizing them to the required dimensions (48x48).
+- Feed the preprocessed images into the trained model to predict the stress level based on the facial expressions.
 
 ## Saving the Model to Keras Extension 
-- As prevention, we also save our model in keras extension
+- As a precaution, save the model in Keras format to ensure compatibility with different environments.
 
 ## Convert the Keras Model to JSON 
-- First, we created the path where we want our JSON model to be saved into
-- Convert the Keras model to JSON and save it to the intended path 
+- Create a path where the JSON model will be saved.
+- Convert the trained Keras model to JSON format and save it at the specified location for easy model sharing and deployment.
