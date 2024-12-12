@@ -15,7 +15,7 @@ Dektes uses Convolutional Neural Network which accepts Image input and returns a
 
 
 ## Source of Dataset
-Facial Expression of Fatigues (FEF) (https://www.kaggle.com/datasets/minhngt02/facial-expression-of-fatigues-fer)
+Facial Expression of Fatigues (FEF) : https://www.kaggle.com/datasets/minhngt02/facial-expression-of-fatigues-fer
 
 
 
