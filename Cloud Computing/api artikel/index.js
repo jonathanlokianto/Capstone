@@ -34,7 +34,7 @@ const upload = multer({
 // Rute untuk mendapatkan semua artikel
 app.get('/articles', async (req, res) => {
     try {
-        const snapshot = await db.collection('artikel').get();
+        const snapshot = await db.collection('articles').get();
         const articles = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
 
         // Mengurutkan artikel berdasarkan ID secara numerik
@@ -56,7 +56,7 @@ app.get('/articles/:id', async (req, res) => {
     const articleId = req.params.id;
 
     try {
-        const doc = await db.collection('artikel').doc(articleId).get();
+        const doc = await db.collection('articles').doc(articleId).get();
         if (!doc.exists) {
             return res.status(404).json({ status: 'error', message: 'Article not found' });
         }
@@ -96,7 +96,7 @@ app.post('/articles', upload.single('image'), async (req, res) => {
             const imageUrl = `https://storage.googleapis.com/${bucketName}/${fileName}`;
 
             // Ambil ID terakhir
-            const snapshot = await db.collection('artikel').orderBy('id').get();
+            const snapshot = await db.collection('articles').orderBy('id').get();
             const lastId = snapshot.empty ? 0 : parseInt(snapshot.docs[snapshot.docs.length - 1].id);
             const newId = lastId + 1;
 
@@ -113,7 +113,7 @@ app.post('/articles', upload.single('image'), async (req, res) => {
                 created_at: formattedDate
             };
 
-            await db.collection('artikel').doc(newId.toString()).set(newArticle);
+            await db.collection('articles').doc(newId.toString()).set(newArticle);
             res.status(201).json({
                 status: 'success',
                 message: 'Article added successfully',
@@ -140,7 +140,7 @@ app.put('/articles/:id', upload.single('image'), async (req, res) => {
     }
 
     try {
-        const docRef = db.collection('artikel').doc(articleId);
+        const docRef = db.collection('articles').doc(articleId);
         const doc = await docRef.get();
 
         if (!doc.exists) {
@@ -202,7 +202,7 @@ app.delete('/articles/:id', async (req, res) => {
     const articleId = req.params.id;
 
     try {
-        const docRef = db.collection('artikel').doc(articleId);
+        const docRef = db.collection('articles').doc(articleId);
         const doc = await docRef.get();
 
         if (!doc.exists) {
