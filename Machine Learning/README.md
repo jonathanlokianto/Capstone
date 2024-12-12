@@ -1,5 +1,17 @@
 # Machine Learning Documentation
 
+
+## Team Members
+- **Jonathan Lokianto**  
+  *Student ID*: M108B4KY2091  
+
+- **Caroline Graciela Hermanto**  
+  *Student ID*: M108B4KX0902  
+
+- **Muhammad Zidan Alif Oktavian**  
+  *Student ID*: M284B4KY3135
+  
+
 ## Machine Learning Schedule
 
 | Task | Week 1                        | Week 2                        | Week 3                                | Week 4                                        |
