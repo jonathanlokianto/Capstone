@@ -9,16 +9,24 @@
 | Task 3   | Data cleaning          | Training and testing CNN | Hyperparameter tuning                | Refining the model based on feedback    |
 
 
-
 ## Model Description
-Dektes uses Convolutional Neural Network which accept Image input and return a result between 0 to 1 from no stress detected to stress.
+Dektes uses Convolutional Neural Network which accepts Image input and returns a result between 0 to 1 from no stress detected to stress.
+
+
+## Source of Dataset
+Facial Expression of Fatigues (FEF) (https://www.kaggle.com/datasets/minhngt02/facial-expression-of-fatigues-fer)
 
 
 ## Library Used
-
-
-
-
+- Tensorflow
+- Numpy
+- Pandas
+- Matplotlib
+- Widgets
+- OS
+- Image
+- Pickle
+- Drive (from google.colab)
 
 
 ## File Directory
@@ -27,7 +35,3 @@ Dektes uses Convolutional Neural Network which accept Image input and return a r
 
 ## Image Label Description
 
-
-
-## Source of Dataset
-Facial Expression of Fatigues (FEF) (https://www.kaggle.com/datasets/minhngt02/facial-expression-of-fatigues-fer)
