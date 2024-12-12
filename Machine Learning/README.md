@@ -11,13 +11,11 @@
 
 
 ## Model Description
-Dektes uses Convolutional Neural Network which accepts Image input and returns a result between 0 to 1 from no stress detected to stress.
-
+Dektes utilizes a Convolutional Neural Network (CNN) that accepts image inputs and outputs a result between 0 and 1, indicating the level of stress detected, where 0 represents "no stress" and 1 indicates "stress."
 
 
 ## Source of Dataset
 Facial Expression of Fatigues (FEF) : https://www.kaggle.com/datasets/minhngt02/facial-expression-of-fatigues-fer
-
 
 
 ## Library Used
@@ -43,7 +41,9 @@ Facial Expression of Fatigues (FEF) : https://www.kaggle.com/datasets/minhngt02/
 
 
 ### Step 2: Import the Dataset
-
+- Use TensorFlow’s image_dataset_from_directory function to load the training and validation datasets from their respective directories.
+- Resize all images to a consistent size of 48x48 pixels for uniform input to the model.
+- Load the images in grayscale format (single channel) to focus on intensity rather than color.
 
 
 ### Step 3: Data Augmentation
@@ -58,27 +58,35 @@ Facial Expression of Fatigues (FEF) : https://www.kaggle.com/datasets/minhngt02/
 - The model's output is expected to be between 0 and 1, so a sigmoid activation function is used for the output layer.
 
 
-### Step : Training the Model
+### Step 4: Defining Callbacks
+- The ReduceLROnPlateau callback is used to adjust the learning rate during training.
+- Set limit to the min_lr parameter properly, ensuring that it doesn't fall below certain treshold, preventing the learning rate from getting too small to be effective.
+
+
+### Step 5: Training the Model
 - Train the model for 30 epochs, using a learning rate scheduler (reduce_lr) to adjust the learning rate dynamically.
+- The callback helps the model adapt its learning rate when the progress slows, allowing for more efficient fine-tuning.
+- This approach minimizes overfitting and enhances the model's ability to generalize to unseen data, ensuring better performance and stability during training.
 
 
-### Plotting the Result of Training and Validation Accuracy and Loss
+### Step 6: Plotting the Result of Training and Validation Accuracy and Loss
 - Utilize Matplotlib to plot training and validation accuracy and loss graphs for easy visualization.
 - The model achieves 84.5% accuracy on the training set and 85.56% on the validation set. The training loss is 0.4030, while the validation loss is 0.3999.
 
 
-### Saving the Model to H5 Extension 
+### Step 7: Saving the Model to H5 Extension 
 - Save the trained model with the .h5 extension to a specified path (such as Google Drive) for future use.
 
-### Testing the Model
+
+### Step 8: Testing the Model
 - To verify the model's functionality, test it by uploading real images of human facial expressions.
 - Use the ipywidgets library to create an interactive interface, allowing users to upload images directly from their devices.
 - Preprocess the uploaded images by normalizing pixel values and resizing them to the required dimensions (48x48).
 - Feed the preprocessed images into the trained model to predict the stress level based on the facial expressions.
 
-### Saving the Model to Keras Extension 
+### Step 9: Saving the Model to Keras Extension 
 - As a precaution, save the model in Keras format to ensure compatibility with different environments.
 
-### Convert the Keras Model to JSON 
+### Step 10: Convert the Keras Model to JSON 
 - Create a path where the JSON model will be saved.
 - Convert the trained Keras model to JSON format and save it at the specified location for easy model sharing and deployment.
