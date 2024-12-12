@@ -35,9 +35,9 @@ Facial Expression of Fatigues (FEF) : https://www.kaggle.com/datasets/minhngt02/
 
 ## Step 1: Setup Python Environment
 -  Install the necessary dependencies using the following command:
-'''python
+```python
   pip install reuirements.txt
-'''
+```
 -  Import the required libraries to get started with the project.
 
 
