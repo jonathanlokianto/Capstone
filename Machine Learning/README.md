@@ -2,11 +2,12 @@
 
 ## Machine Learning Schedule
 
-| Task     | Week 1                 | Week 2                   | Week 3                               | Week 4                                  |
-| -------- | ---------------------- | ------------------------ | ------------------------------------ | --------------------------------------- |
-| 1   | Finding image dataset  | Pre-processing dataset   | Testing and validating the CNN model | Collecting feedback from deployment     |
-| 2   | Dataset evaluation     | Building the CNN model   | Model deployment (by Cloud Team)     | Post-deployment evaluation and analysis |
-| 3   | Data cleaning          | Training and testing CNN | Hyperparameter tuning                | Refining the model based on feedback    |
+| Task | Week 1                        | Week 2                        | Week 3                                | Week 4                                        |
+|------|-------------------------------|-------------------------------|---------------------------------------|---------------------------------------------|
+| 1    | Finding image dataset         | Pre-processing dataset        | Testing and validating the CNN model  | Deploy the model using Cloud Computing      |
+| 2    | Dataset evaluation            | Building the CNN model        | Model deployment (by Cloud Team)      | Collecting feedback from deployment        |
+| 3    | Data cleaning                 | Training and testing the CNN  | Hyperparameter tuning                | Post-deployment evaluation and analysis     |
+| 4    | -                             | -                             | Convert the model into TensorFlow.js  | Refining the model based on feedback       |
 
 
 ## Model Description
