@@ -1,5 +1,5 @@
 # Machine Learning Documentation
-
+Dektes utilizes a Convolutional Neural Network (CNN) that accepts image inputs and outputs a result between 0 and 1, indicating the level of stress detected, where 0 represents "no stress" and 1 indicates "stress."
 
 ## Team Members
 - **Jonathan Lokianto**  
@@ -21,9 +21,6 @@
 | 3    | Data cleaning                 | Training and testing the CNN  | Hyperparameter tuning                | Post-deployment evaluation and analysis     |
 | 4    | -                             | -                             | Convert the model into TensorFlow.js  | Refining the model based on feedback       |
 
-
-## Model Description
-Dektes utilizes a Convolutional Neural Network (CNN) that accepts image inputs and outputs a result between 0 and 1, indicating the level of stress detected, where 0 represents "no stress" and 1 indicates "stress."
 
 
 ## Source of Dataset
