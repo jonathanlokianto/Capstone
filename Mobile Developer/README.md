@@ -40,4 +40,4 @@ The application incorporates face-based stress level detection using a TensorFlo
 ## Aplication Interface
 
 - Home Page
-- ![App Screenshot](https://drive.google.com/file/d/1SU5KvDwsTZiqwlwF80L-DljcGp8ptSJW/view?usp=drive_link)
+- ![App Screenshot](https://github.com/Rahmadfirdiansyah/Operasi-matriks/blob/main/ss/WhatsApp%20Image%202024-12-13%20at%2000.39.02%20(1).jpeg)
