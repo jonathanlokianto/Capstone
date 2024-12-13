@@ -40,3 +40,4 @@ The application incorporates face-based stress level detection using a TensorFlo
 ## Aplication Interface
 
 - Home Page
+- ![App Screenshot](https://drive.google.com/file/d/1SU5KvDwsTZiqwlwF80L-DljcGp8ptSJW/view?usp=drive_link)
