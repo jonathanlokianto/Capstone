@@ -25,3 +25,6 @@ Before proceeding, ensure you have the following installed and configured:
 ### 2. Prepare the Environment
 
   #### 1. Install Dependencies
+  ```
+Install Dependencies
+```
