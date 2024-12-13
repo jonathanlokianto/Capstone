@@ -37,6 +37,22 @@ Facial Expression of Fatigues (FEF) : https://www.kaggle.com/datasets/minhngt02/
 Access our model using the link below:  
 [Google Colab Notebook](https://colab.research.google.com/drive/1Ok2q0rkfGDZz-zc0-T8-HTHhG6avFKvc?usp=sharing)
 
+### Highlights
+- **Platform:** Google Colab  
+- **Purpose:** Interactive exploration and usage of our model.  
+- **Accessibility:** Fully hosted, minimal setup required (only dependencies).
+- **Key Feature:** Easy-to-use interface for running and customizing the model directly in your browser.
+
+### How to Use
+1. Click on the link to open the Colab notebook.  
+2. In the **Load Dataset** section, replace the code with your own dataset import method and file path. Ensure the dataset is accessible in your environment (e.g., uploaded to Colab, linked to your Google Drive, or fetched from an external source).  
+3. Follow the instructions in the notebook to load and test the model.  
+4. Customize other sections as needed and run the notebook directly in your browser.  
+
+> **Note:** The current notebook does not include a pre-configured dataset path. You must provide your own dataset and update the code accordingly.
+
+Feel free to reach out if you encounter any issues or need further guidance!
+
 
 ## Library Used
 - Tensorflow
