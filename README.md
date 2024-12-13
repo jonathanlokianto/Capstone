@@ -16,7 +16,7 @@
     <br />
     <a href="https://docs.google.com/document/d/1mBpYzzJBAlRY_PCCWks9EanRWjc00xQJsJT1coYsE9s/edit?usp=sharing">Project Brief</a>
     ·
-    <a href="#">DekTes APK Link</a>
+    <a href="https://drive.google.com/file/d/1RwuXn6oDCC0fLEecHms622OzrGxrwUrH/view?usp=sharing">DekTes APK Link</a>
     ·
     <a href="https://www.youtube.com/watch?v=P9CMwsPOBU0">Video Presentation</a>
     ·
