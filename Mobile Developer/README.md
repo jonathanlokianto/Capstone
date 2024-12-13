@@ -21,9 +21,9 @@ The application incorporates face-based stress level detection using a TensorFlo
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#A3CEF1](https://via.placeholder.com/10/0a192f?text=+) #A3CEF1 |
-| Secondary Color | ![#386BF6](https://via.placeholder.com/10/f8f8f8?text=+) #386BF6 |
-| Accent Color | ![#F5B7B1](https://via.placeholder.com/10/00b48a?text=+) #F5B7B1 |
+| Primary Color | #A3CEF1 |
+| Secondary Color | #386BF6 |
+| Accent Color | #F5B7B1 |
 
 
 
