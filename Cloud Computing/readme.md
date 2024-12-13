@@ -5,7 +5,10 @@ This model was created to detect stress levels based on user face detection. Thi
 ## Cloud Architecture
 ![alt text](https://github.com/jonathanlokianto/Capstone/blob/main/Cloud%20Computing/CArchitecture.png?raw=true)
 
+
 ## Tools
+![alt text](https://github.com/jonathanlokianto/Capstone/blob/main/Cloud%20Computing/CImplementation.png?raw=true)
+
 
 - Python: Programming language for running the model.
 - Docker: Containerization platform.
