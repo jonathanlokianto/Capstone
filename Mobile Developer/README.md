@@ -15,28 +15,6 @@ The application incorporates face-based stress level detection using a TensorFlo
 | ---------------------- | ------------------------ | ------------------------------------ | --------------------------------------- |
 | Creating User Flow Communication about UI / UX  | Designing UI/UX   | Implement UI and Connecting App to API | Implement UI and Connecting App to API |
 
-
-
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | #A3CEF1 |
-| Secondary Color | #386BF6 |
-| Accent Color | #F5B7B1 |
-
-
-
-
-## Library Used
-- AndroidX
-- Kotlin Coroutines
-- Retrofit
-- OkHttp Logging Interceptor
-- CameraX
-- Kotlin Serialization
-- Glide
-
 ## Aplication Interface
 
 - Home Page
@@ -59,4 +37,25 @@ The application incorporates face-based stress level detection using a TensorFlo
 <p>
   <img src="https://github.com/Rahmadfirdiansyah/Operasi-matriks/blob/main/ss/Screenshot_2024-12-11-23-22-46-01_8bdc71b7a45787327429921bdf8e4070.jpg" width="200"/>
 </p>
+
+
+## Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Primary Color | #A3CEF1 |
+| Secondary Color | #386BF6 |
+| Accent Color | #F5B7B1 |
+
+
+
+
+## Library Used
+- AndroidX
+- Kotlin Coroutines
+- Retrofit
+- OkHttp Logging Interceptor
+- CameraX
+- Kotlin Serialization
+- Glide
 
