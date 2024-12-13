@@ -7,3 +7,5 @@ Model ini dibuat untuk mendeteksi tingkat stres berdasarkan deteksi wajah penggu
 - Cloud Run
 - App Engine
 - Docker
+- Dockerhub
+- Firestore
