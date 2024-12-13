@@ -1,6 +1,6 @@
 # Dokumentasi Model Stress Detector
 
-Model ini dibuat untuk mendeteksi tingkat stres berdasarkan deteksi wajah pengguna. Model ini diimplementasikan menggunakan TensorFlow/Keras dan dideploy ke Google Cloud Platform (GCP) dengan menggunakan Docker dan Cloud Run.
+This model was created to detect stress levels based on user face detection. This model was implemented using TensorFlow/Keras and deployed to Google Cloud Platform (GCP) using Docker and Cloud Run.
 
 # Tools
 
@@ -9,3 +9,5 @@ Model ini dibuat untuk mendeteksi tingkat stres berdasarkan deteksi wajah penggu
 - Docker
 - Dockerhub
 - Firestore
+
+# How to Deploy Models
