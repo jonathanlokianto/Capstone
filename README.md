@@ -60,13 +60,18 @@
 
 
 # Documentation
-You can find our relevant documentation at the following link:
 
-## Machine Learning 
-- [Machine Learning Documentation](https://github.com/jonathanlokianto/Capstone/tree/main/Machine%20Learning)
+Explore our detailed documentation for each component of the project using the links below:
 
-## Cloud Computing 
-- [Cloud Computing Documentation](https://github.com/jonathanlokianto/Capstone/tree/main/Cloud%20Computing)
+## Machine Learning  
+Find everything related to the development, training, and deployment of our machine learning model:  
+[**Machine Learning Documentation**](https://github.com/jonathanlokianto/Capstone/tree/main/Machine%20Learning)
 
-## Mobile Development 
-- [Mobile Development Documentation](https://github.com/jonathanlokianto/Capstone/tree/main/Mobile%20Developer)
+## Cloud Computing  
+Discover how we integrated and deployed our model using cloud-based solutions:  
+[**Cloud Computing Documentation**](https://github.com/jonathanlokianto/Capstone/tree/main/Cloud%20Computing)
+
+## Mobile Development  
+Learn more about the development of our mobile application and its features:  
+[**Mobile Development Documentation**](https://github.com/jonathanlokianto/Capstone/tree/main/Mobile%20Developer)
+
