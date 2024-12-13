@@ -1,5 +1,5 @@
 # Machine Learning Documentation
-Dektes uses a Convolutional Neural Network (CNN) to analyze image inputs and produce an output value between 0 and 1. This value represents the level of stress detected, where 0 signifies 'no stress' and 1 indicates 'stress.
+Dektes uses a Convolutional Neural Network (CNN) to analyze image inputs and produce an output value between 0 and 1. This value represents the level of stress detected, where 0 signifies 'no stress' and 1 indicates 'stress'.
 
 ## Team Members
 - **Jonathan Lokianto**  
