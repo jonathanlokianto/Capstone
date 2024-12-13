@@ -1,5 +1,5 @@
 # Machine Learning Documentation
-Dektes utilizes a Convolutional Neural Network (CNN) that accepts image inputs and outputs a result between 0 and 1, indicating the level of stress detected, where 0 represents "no stress" and 1 indicates "stress."
+Dektes uses a Convolutional Neural Network (CNN) to analyze image inputs and produce an output value between 0 and 1. This value represents the level of stress detected, where 0 signifies 'no stress' and 1 indicates 'stress.
 
 ## Team Members
 - **Jonathan Lokianto**  
@@ -16,8 +16,8 @@ Dektes utilizes a Convolutional Neural Network (CNN) that accepts image inputs a
 
 | Task | Week 1                        | Week 2                        | Week 3                                | Week 4                                        |
 |------|-------------------------------|-------------------------------|---------------------------------------|---------------------------------------------|
-| 1    | Finding image dataset         | Pre-processing dataset        | Testing and validating the CNN model  | Deploy the model using Cloud Computing      |
-| 2    | Dataset evaluation            | Building the CNN model        | Model deployment (by Cloud Team)      | Collecting feedback from deployment        |
+| 1    | Finding image dataset         | Preprocess dataset        | Testing and validating the CNN model  | Deploy the model using Cloud Computing      |
+| 2    | Evaluate dataset            | Building the CNN model        | Model deployment (by Cloud Team)      | Collecting feedback from deployment        |
 | 3    | Data cleaning                 | Training and testing the CNN  | Hyperparameter tuning                | Post-deployment evaluation and analysis     |
 | 4    | -                             | -                             | Convert the model into TensorFlow.js  | Refining the model based on feedback       |
 
@@ -30,7 +30,7 @@ Facial Expression of Fatigues (FEF) : https://www.kaggle.com/datasets/minhngt02/
 - **Name:** Facial Expression of Fatigues (FEF)  
 - **Platform:** Kaggle  
 - **Description:** A dataset designed for detecting and analyzing facial expressions related to fatigue.  
-- **Applications:** Suitable for research in machine learning, computer vision, and emotion detection.
+- **Applications:** This dataset is ideal for research in machine learning, computer vision, and emotion detection tasks.
 
 
 ## Link to Our Model
@@ -49,7 +49,7 @@ Access our model using the link below:
 3. Follow the instructions in the notebook to load and test the model.  
 4. Customize other sections as needed and run the notebook directly in your browser.  
 
-> **Note:** The current notebook does not include a pre-configured dataset path. You must provide your own dataset and update the code accordingly.
+> **Note:** Please ensure that you upload or link your own dataset when running the Colab notebook, as the current implementation does not include a pre-configured dataset path.
 
 Feel free to reach out if you encounter any issues or need further guidance!
 
