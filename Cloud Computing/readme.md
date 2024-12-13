@@ -4,10 +4,21 @@ This model was created to detect stress levels based on user face detection. Thi
 
 # Tools
 
-- Cloud Run
-- App Engine
-- Docker
-- Dockerhub
-- Firestore
+- Python: Programming language for running the model.
+- Docker: Containerization platform.
+- DockerHub: Repository for storing and distributing Docker images.
+-  Google Cloud Platform (GCP): Cloud platform for deployment.
+# Tools GCP Service
+- Cloud Run: Service for deploying and managing containerized applications as APIs.
+- Cloud Storage: For storing static files such as images or other large binary objects.
+- Cloud Firestore: NoSQL database for dynamic and real-time data storage.
+- App Engine: Used to deploy and manage the primary backend application.
 
 # How to Deploy Models
+1. Prerequisites
+Before proceeding, ensure you have the following installed and configured:
+
+- Python 3.8 or higher
+- Docker
+- GCP SDK (authenticated to your account)
+- DockerHub account for pushing and managing Docker images
