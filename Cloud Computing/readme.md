@@ -26,5 +26,10 @@ Before proceeding, ensure you have the following installed and configured:
 
   #### 1. Install Dependencies
   ```
-Install Dependencies
+pip install -r requirements.txt
 ```
+ #### 2. Test the Application Locally Run the API locally to verify its functionality.
+ ```
+python app.py
+```
+By default, the API should be accessible at http://127.0.0.1:5000.
