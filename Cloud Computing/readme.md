@@ -17,8 +17,10 @@ This model was created to detect stress levels based on user face detection. Thi
 ## How to Deploy Models
 ### 1. Prerequisites
 Before proceeding, ensure you have the following installed and configured:
-
 - Python 3.8 or higher
 - Docker
 - GCP SDK (authenticated to your account)
 - DockerHub account for pushing and managing Docker images
+
+### 2. Prepare the Environment
+#### 1. Install Dependencies
