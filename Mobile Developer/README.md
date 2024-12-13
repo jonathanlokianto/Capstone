@@ -44,6 +44,10 @@ The application incorporates face-based stress level detection using a TensorFlo
   <img src="https://github.com/Rahmadfirdiansyah/Operasi-matriks/blob/main/ss/WhatsApp%20Image%202024-12-13%20at%2000.39.02%20(1).jpeg" width="200"/>
 </p>
 - Article Page
+- History Page
+- analysis Page
+
+- Article Page
 <p>
   <img src="https://github.com/Rahmadfirdiansyah/Operasi-matriks/blob/main/ss/Screenshot_2024-12-11-23-21-04-57_8bdc71b7a45787327429921bdf8e4070.jpg" width="200"/>
   <img src="https://github.com/Rahmadfirdiansyah/Operasi-matriks/blob/main/ss/WhatsApp%20Image%202024-12-13%20at%2000.39.03.jpeg" width="200"/>
