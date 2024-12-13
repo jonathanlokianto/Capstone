@@ -23,4 +23,5 @@ Before proceeding, ensure you have the following installed and configured:
 - DockerHub account for pushing and managing Docker images
 
 ### 2. Prepare the Environment
-#### 1. Install Dependencies
+
+  #### 1. Install Dependencies
