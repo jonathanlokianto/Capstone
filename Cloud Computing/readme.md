@@ -50,3 +50,21 @@ docker push [DOCKER_USERNAME]/stress-detector
 docker tag stress-detector gcr.io/[PROJECT-ID]/stress-detector
 docker push gcr.io/[PROJECT-ID]/stress-detector
 ```
+### 4. Deploy to GCP Services
+1: Deploy with Cloud Run
+  #### 1. Deploy the Container to Cloud Run Replace [PROJECT-ID] and [REGION] with your GCP project ID and desired region.
+  ```
+gcloud run deploy stress-detector \
+    --image [DOCKER_USERNAME]/stress-detector \
+    --platform managed \
+    --region [REGION] \
+    --allow-unauthenticated
+```
+#### 2. Note the URL After deployment, note the URL provided by Cloud Run. This is where your API will be accessible
+
+### 5. Use Cloud Storage for Static Files
+#### 1. Upload Files to Cloud Storage
+```
+gsutil cp <FILE_PATH> gs://[BUCKET_NAME]/
+```
+#### 2. Access Files Use the public URL or configure permissions for controlled access to your static files.
