@@ -15,7 +15,7 @@ This model was created to detect stress levels based on user face detection. Thi
 - App Engine: Used to deploy and manage the primary backend application.
 
 ## How to Deploy Models
-## 1. Prerequisites
+### 1. Prerequisites
 Before proceeding, ensure you have the following installed and configured:
 
 - Python 3.8 or higher
