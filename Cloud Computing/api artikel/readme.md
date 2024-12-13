@@ -1,85 +1,85 @@
-# Dokumentasi API Artikel
+# API Documentation: Articles
 
-API ini memungkinkan pengguna untuk mengelola artikel, termasuk membuat, membaca, memperbarui, dan menghapus artikel. API ini dibangun menggunakan Node.js, Express, dan MySQL.
+This API allows users to manage articles, including creating, reading, updating, and deleting articles. It is built using Node.js, Express, and MySQL.
 
 ## Tools
 
-- Node.js
-- Firestore (Membutuhkan Service Account)
-- Express (Framework API)
-- Nodemon
+- **Node.js**  
+- **Firestore** (Requires a Service Account)  
+- **Express** (API Framework)  
+- **Nodemon**  
 
-## Cara Penggunaan
+## Usage Instructions
 
-- NPM Install
-- Mengganti Path Service Account di index.js
-- Membuat Collections Firestore Yang Bernama artikel
+1. Run `npm install` to install dependencies.
+2. Update the Service Account path in `index.js`.
+3. Create a Firestore collection named `articles`.
 
-## Daftar Endpoint
+## Endpoint List
 
-### 1. Mendapatkan Semua Artikel
+### 1. Get All Articles
 
-- **URL**: `/articles`
-- **Metode**: `GET`
-- **Deskripsi**: Mengambil semua artikel dari database.
-- **Respons**:
-  - **200 OK**: Mengembalikan daftar artikel.
-  - **500 Internal Server Error**: Jika terjadi kesalahan pada server.
+- **URL**: `/articles`  
+- **Method**: `GET`  
+- **Description**: Retrieves all articles from the database.  
+- **Response**:  
+  - **200 OK**: Returns a list of articles.  
+  - **500 Internal Server Error**: If a server error occurs.  
 
+#### Example Response
 ```json
 {
     "status": "success",
     "data": [
         {
             "id": 1,
-            "title": "Judul Artikel 1",
-            "content": "Isi artikel 1.",
+            "title": "Article Title 1",
+            "content": "Content of article 1.",
             "image_url": "http://example.com/image1.jpg",
-            "source" : "http://example.com/article1.jpg",
-            "create_at" : "DD-MM-YYYY"
+            "source": "http://example.com/article1.jpg",
+            "create_at": "DD-MM-YYYY"
         },
         {
             "id": 2,
-            "title": "Judul Artikel 2",
-            "content": "Isi artikel 2.",
+            "title": "Article Title 2",
+            "content": "Content of article 2.",
             "image_url": "http://example.com/image2.jpg",
-            "source" : "http://example.com/article2.jpg",
-            "create_at" : "DD-MM-YYYY"
+            "source": "http://example.com/article2.jpg",
+            "create_at": "DD-MM-YYYY"
         },
         {
             "id": 3,
-            "title": "Judul Artikel 3",
-            "content": "Isi artikel 3.",
+            "title": "Article Title 3",
+            "content": "Content of article 3.",
             "image_url": "http://example.com/image3.jpg",
-            "source" : "http://example.com/article3.jpg",
-            "create_at" : "DD-MM-YYYY"
+            "source": "http://example.com/article3.jpg",
+            "create_at": "DD-MM-YYYY"
         }
     ]
 }
 ```
 
-### 2. Mendapatkan Semua Artikel dari ID
+### 2. Get Article by ID
 
-- **URL**: `/articles/:ID`
-- **Metode**: `GET`
-- **Deskripsi**: Mengambil semua artikel dari database berdasarkan id.
-- **Respons**:
-  - **200 OK**: Mengembalikan daftar artikel.
-  - **404 Not Found**: Tidak ada artikel dengan id tersebut.
+- **URL**: `/articles/:ID`  
+- **Method**: `GET`  
+- **Description**: Retrieves an article from the database based on its ID.  
+- **Response**:  
+  - **200 OK**: Returns the article.  
+  - **404 Not Found**: No article found with the specified ID.  
 
-#### Contoh Respons Parameter ID 1
+#### Example Response for ID 1
 ```json
 {
     "status": "success",
     "data": [
         {
             "id": 1,
-            "title": "Judul Artikel 1",
-            "content": "Isi artikel 1.",
+            "title": "Article Title 1",
+            "content": "Content of article 1.",
             "image_url": "http://example.com/image1.jpg",
-            "source" : "http://example.com/article1.jpg",
-            "create_at" : "DD-MM-YYYY"
+            "source": "http://example.com/article1.jpg",
+            "create_at": "DD-MM-YYYY"
         }
     ]
 }
-```
