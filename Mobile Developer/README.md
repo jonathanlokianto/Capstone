@@ -36,3 +36,7 @@ The application incorporates face-based stress level detection using a TensorFlo
 - CameraX
 - Kotlin Serialization
 - Glide
+
+## Aplication Interface
+
+- Home Page
