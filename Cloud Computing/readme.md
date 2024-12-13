@@ -3,7 +3,7 @@
 This model was created to detect stress levels based on user face detection. This model was implemented using TensorFlow/Keras and deployed to Google Cloud Platform (GCP) using Docker and Cloud Run.
 
 ## Cloud Architecture
-![alt text](https://ibb.co.com/Vj44hvv)
+![alt text](https://github.com/jonathanlokianto/Capstone/blob/main/Cloud%20Computing/CArchitecture.png?raw=true)
 
 ## Tools
 
