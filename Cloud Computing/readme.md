@@ -32,4 +32,21 @@ pip install -r requirements.txt
  ```
 python app.py
 ```
-By default, the API should be accessible at http://127.0.0.1:5000.
+### 3. Build and Push the Docker Image
+  #### 1. Build the Docker Image
+  ```
+docker build -t stress-detector .
+```
+  #### 2. Tag the Image for DockerHub Replace [DOCKER_USERNAME] with your DockerHub username.
+  ```
+docker tag stress-detector [DOCKER_USERNAME]/stress-detector
+```
+  #### 3. Push the Image to DockerHub
+```
+docker push [DOCKER_USERNAME]/stress-detector
+```
+  #### 4. Push the Image to GCP Container Registry (Optional) If you prefer using GCP Container Registry, tag the image for GCR and push it:
+```
+docker tag stress-detector gcr.io/[PROJECT-ID]/stress-detector
+docker push gcr.io/[PROJECT-ID]/stress-detector
+```
